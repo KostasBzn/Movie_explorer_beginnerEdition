@@ -1,4 +1,4 @@
-### 1. **Movie Explorer**
+### **Movie Explorer**
 
 - **API:** [The Movie Database API](https://www.themoviedb.org/documentation/api)
 - **Features:**
