@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Roboto, Helvetica, sans-serif;
+  background-color: antiquewhite;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 40px;
+  border-bottom: 3px solid gray;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.section_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_bar {
+  border: 3px solid grey;
+  border-radius: 10px;
+  background-color: rgb(196, 194, 112);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30em;
+  height: 3rem;
+}
+
+.search_label {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#search {
+  height: 2rem;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.submit_button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.page_manipulation {
+  display: none;
+}
+
+.logo {
+  height: 300px;
+}
+
+.toggle_section {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 9999;
+  display: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  height: 80%;
+  overflow: scroll;
+}
+
+.close_toggle {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.movie_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 50px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.movie_list li {
+  list-style-type: none;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+  position: relative;
+}
+
+.details_button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+}
+
+/* .movie_list li h4 {
+  font-size: 1.3rem;
+  color: #6b6b6b;
+  margin-bottom: 5px;
+} */
+
+.toggle_section {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 10px;
+
+  margin: auto;
+}
+
+.toggle_section h2 {
+  font-size: 1.5rem;
+  margin: 20px 5px;
+}
+
+.toggle_section img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.toggle_section p {
+  margin: 10px 0;
+}
+
+.page_manipulation {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 4px solid gray;
+  margin-bottom: 30px;
+}
+
+.pages_buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.page_count p {
+  margin-bottom: 15px;
+}
+
+.previous_page,
+.next_page {
+  cursor: pointer;
+}
+
+.upcoming_list,
+.trending_list,
+.top-rated_list,
+.favorite-movies_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 20px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.upcoming_list li,
+.trending_list li,
+.top-rated_list li,
+.favorite-movies li {
+  list-style-type: none;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+  position: relative;
+}
+
+.details_button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+}
+
+/* .upcoming_list li h4,
+.trending_list li h4,
+.top-rated_list li h4 {
+  font-size: 1.2rem;
+  color: #6b6b6b;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+} */
+
+.trending h2,
+.upcoming h2,
+.top-rated h2,
+.favorite-movies h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.trending,
+.upcoming,
+.top-rated,
+.favorite-movies {
+  margin-bottom: 50px;
+}
+
+.favorite {
+  border: none;
+  background-color: transparent;
+  color: #007bff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.heart-solid {
+  display: none;
+}
+
+.favorite-movies {
+  display: none;
+}

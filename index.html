@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Explorer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Movie Explorer</h1>
+    </header>
+    <main>
+      <section class="section_search">
+        <div class="search_bar">
+          <label for="search" class="search_label">
+            Search
+            <input id="search" type="text" placeholder="Movie name..." />
+            <button type="submit" class="submit_button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </label>
+        </div>
+      </section>
+      <section class="display_movies">
+        <ul class="movie_list"></ul>
+      </section>
+      <section class="toggle_section"></section>
+      <section class="page_manipulation">
+        <div class="page_count"></div>
+        <div class="pages_buttons">
+          <button class="previous_page">Previous page</button>
+          <button class="next_page">Next page</button>
+        </div>
+      </section>
+      <section class="trending">
+        <h2>Trending movies</h2>
+        <ul class="trending_list"></ul>
+      </section>
+      <section class="upcoming">
+        <h2>Upcoming movies</h2>
+        <ul class="upcoming_list"></ul>
+      </section>
+      <section class="top-rated">
+        <h2>Top-rated movies</h2>
+        <ul class="top-rated_list"></ul>
+      </section>
+      <section class="favorite-movies">
+        <h2>Favorites</h2>
+        <ul class="favorite-movies_list"></ul>
+      </section>
+    </main>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
