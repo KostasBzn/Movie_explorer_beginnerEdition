@@ -8,4 +8,4 @@
 
 --A beginner project from me doing my first steps in javascript, and fetching data--
 
-Click [here](https://garenghazarian1.github.io/Kostas-Garen-group-project/) to visit the website.
+Click [here](https://kostasbzn.github.io/Movie_explorer_beginnerEdition/) to visit the website.
